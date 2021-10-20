@@ -31,6 +31,7 @@
     grid-area:main;
     border: 1px solid rgb(179, 179, 179);
     background-color: rgb(226, 210, 146);
+
 }
 .right-menu-1{
     grid-area: right-menu-1;
@@ -88,3 +89,24 @@
     border: 1px solid rgb(179, 179, 179);
     background-color: rgb(167, 236, 213);
 }
+@media screen and (max-width: 700px) {
+    .right-menu-1, .right-menu-2 {
+      display: none;
+    }  
+    .container {
+      grid-template:
+        "header header" 60px
+        "left-menu main" 1fr /
+        200px 1fr;
+    }
+   }
+   @media screen and (max-width: 600px) {
+    .left-menu-2 {
+      display: none;
+    }  
+    .left-menu {
+      grid-template:
+        "left-menu-1 " 1fr /
+         1fr;
+    }
+   }
