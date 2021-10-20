@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.container{
+    display: grid;
+    grid-template: 
+    "header header header header" 60px
+    "left-menu main right-menu-1 right-menu-2" 1fr /
+     250px 1fr 300px 100px;
+     height: 100vh;
+     width:100vw;
+}
+.header{
+    grid-area: header;
+   border: 1px solid rgb(179, 179, 179);
+   background-color: aqua;
+  
+}
+
+
+.left-menu{
+    grid-area: left-menu;
+   background-color: blanchedalmond;
+    border: 1px solid rgb(179, 179, 179);
+  
+}
+
+.main{
+    grid-area:main;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: rgb(226, 210, 146);
+}
+.right-menu-1{
+    grid-area: right-menu-1;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: darkgray;
+}
+.right-menu-2{
+    grid-area: right-menu-2;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: darkorchid;
+}
+.right-menu-1{
+    display: grid;
+    grid-template: 
+    "first-sub-menu " 1fr
+    "second-sub-menu " 1fr
+    "third-sub-menu " 1fr 
+    "fourth-sub-menu " 1fr /
+     1fr;
+}
+.first-sub-menu{
+    grid-area:first-sub-menu  ;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: darksalmon;
+}
+.second-sub-menu {
+    grid-area:second-sub-menu  ;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: darkseagreen;
+}
+.third-sub-menu {
+    grid-area: third-sub-menu;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: indianred;
+}
+.fourth-sub-menu {
+    grid-area: fourth-sub-menu;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: khaki;
+}
+.left-menu{
+    display: grid;
+    grid-template: 
+    "left-menu-1 " 1fr
+    "left-menu-2 " 1fr /
+     1fr;
+}
+.left-menu-1 {
+    grid-area: left-menu-1;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: lightblue;
+}
+.left-menu-2 {
+    grid-area: left-menu-2;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: rgb(167, 236, 213);
+}
